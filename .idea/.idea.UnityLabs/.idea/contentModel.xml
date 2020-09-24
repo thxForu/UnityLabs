@@ -21,6 +21,7 @@
           <e p="Ball.cs" t="Include" />
           <e p="Cycloid.cs" t="Include" />
           <e p="PendulumMove.cs" t="Include" />
+          <e p="PlayerMovement.cs" t="Include" />
           <e p="Spiral.cs" t="Include" />
         </e>
       </e>
