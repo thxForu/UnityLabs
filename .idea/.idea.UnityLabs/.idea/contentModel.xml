@@ -18,6 +18,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="FollowCamera.cs" t="Include" />
           <e p="Lab1-3" t="Include">
             <e p="Ball.cs" t="Include" />
             <e p="Cycloid.cs" t="Include" />
@@ -26,6 +27,8 @@
             <e p="Spiral.cs" t="Include" />
           </e>
           <e p="MoveToClick.cs" t="Include" />
+          <e p="Selector.cs" t="Include" />
+          <e p="SpawnEnemy.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

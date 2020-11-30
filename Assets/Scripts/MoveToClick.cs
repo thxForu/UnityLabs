@@ -5,10 +5,10 @@ using UnityEngine.AI;
 
 public class MoveToClick : MonoBehaviour
 {
+    [SerializeField] private float maxSpeed = 2f;
     private Camera cam;
     private Vector3 posToMove;
     private NavMeshAgent _navMeshAgent;
-    [SerializeField] private float maxSpeed = 2f;
     // Start is called before the first frame update
     void Start()
     {
