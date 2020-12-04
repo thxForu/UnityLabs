@@ -13,6 +13,10 @@ GameObject:
   - component: {fileID: 7144870511952242542}
   - component: {fileID: 8689935631170405035}
   - component: {fileID: 5525512199863526268}
+  - component: {fileID: 6225060508180392830}
+  - component: {fileID: 8805568497183468439}
+  - component: {fileID: 5882295832438134144}
+  - component: {fileID: -5026458912778573323}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -29,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 4424246922420959165}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.4, y: 2.08, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.4523, y: 1.4523, z: 1.4523}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -112,3 +116,67 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!195 &6225060508180392830
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4424246922420959165}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 50
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 7
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &8805568497183468439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4424246922420959165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96738964bfd3f1d46bc53588fef73d70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chaseDistance: 7.32
+  speedFraction: 0.8
+--- !u!114 &5882295832438134144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4424246922420959165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a291687eee6b2864eb5c88d079e791ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 50
+--- !u!114 &-5026458912778573323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4424246922420959165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d310cdd39f1cf40bef735aa65ca4af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectableTab: Enemy
+  highlightMaterial: {fileID: 2100000, guid: 28e48a5cb28e87840a016904a84f17d0, type: 2}
+  defaultMaterial: {fileID: 2100000, guid: 7ea3946bf6164224aae0ad6e2bfae903, type: 2}

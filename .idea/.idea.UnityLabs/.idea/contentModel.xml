@@ -18,6 +18,8 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AIController.cs" t="Include" />
+          <e p="Fireball.cs" t="Include" />
           <e p="FollowCamera.cs" t="Include" />
           <e p="Lab1-3" t="Include">
             <e p="Ball.cs" t="Include" />
@@ -26,7 +28,8 @@
             <e p="PlayerMovement.cs" t="Include" />
             <e p="Spiral.cs" t="Include" />
           </e>
-          <e p="MoveToClick.cs" t="Include" />
+          <e p="Mover.cs" t="Include" />
+          <e p="PlayerController.cs" t="Include" />
           <e p="Selector.cs" t="Include" />
           <e p="SpawnEnemy.cs" t="Include" />
         </e>
